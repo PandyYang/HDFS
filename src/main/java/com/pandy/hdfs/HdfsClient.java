@@ -61,7 +61,7 @@ public class HdfsClient {
         // dest 目的地路径
         fileSystem.copyFromLocalFile(
                 false,
-                false,
+                true,
                 new Path("C:\\Users\\Administrator\\IdeaProjects\\HDFS\\src\\main\\resources\\log4j.properties"),
                 new Path("/xiyou/huaguoshan"));
     }
