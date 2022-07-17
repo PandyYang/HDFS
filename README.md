@@ -4,7 +4,13 @@
 链接：https://pan.baidu.com/s/1nv9DvV1Tyz-qRK9mHkFs4Q?pwd=8urx 
 提取码：8urx 
 
-注意在windows下配置host：
+## 镜像内置一键启动脚本
+```shell
+myhadoop start/stop
+```
+
+## 注意
+在windows下配置host：
 ```shell
 192.168.31.100 hadoop100
 192.168.31.101 hadoop101
