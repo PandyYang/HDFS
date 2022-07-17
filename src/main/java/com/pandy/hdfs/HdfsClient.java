@@ -37,7 +37,7 @@ public class HdfsClient {
     }
 
     @Test
-    public void mkdir() throws URISyntaxException, IOException, InterruptedException {
+    public void mkdir() throws IOException {
 
         // 创建一个文件夹操作
         fileSystem.mkdirs(new Path("/xiyou/huaguoshan"));
