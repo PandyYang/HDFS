@@ -3,3 +3,16 @@
 现在我已经将三台集群的vm镜像打包完整。
 链接：https://pan.baidu.com/s/1nv9DvV1Tyz-qRK9mHkFs4Q?pwd=8urx 
 提取码：8urx 
+
+注意在windows下配置host：
+```shell
+192.168.31.100 hadoop100
+192.168.31.101 hadoop101
+192.168.31.102 hadoop102
+192.168.31.103 hadoop103
+192.168.31.104 hadoop104
+192.168.31.105 hadoop105
+192.168.31.106 hadoop106
+192.168.31.107 hadoop107
+192.168.31.108 hadoop108
+```
