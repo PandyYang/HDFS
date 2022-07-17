@@ -67,4 +67,17 @@ public class HdfsClient {
                 new Path("C:\\Users\\Administrator\\IdeaProjects\\HDFS\\src\\main\\resources\\log4j.properties"),
                 new Path("/xiyou/huaguoshan"));
     }
+
+    @Test
+    public void getFile() throws IOException {
+        // 是否删除源文件 删除hdfs上的源文件
+        // src 源文件的路径HDFS路径
+        // 目标地址路径
+        // 是否进行crc校验，false 会有一个crc文件，用于对比确认源文件是否被篡改
+        fileSystem.copyToLocalFile(
+                false,
+                new Path("/xiyou/huaguoshan/log4j.properties"),
+                new Path("C:\\Users\\Administrator\\IdeaProjects\\HDFS\\src\\main\\resources\\log4j.properties2"),
+                true);
+    }
 }
