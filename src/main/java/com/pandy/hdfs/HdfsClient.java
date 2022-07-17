@@ -28,6 +28,8 @@ public class HdfsClient {
 
         Configuration configuration = new Configuration();
 
+        configuration.set("dfs.replication", "2");
+
         String user = "root";
 
         // 获取客户端对象
