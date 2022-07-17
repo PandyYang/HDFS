@@ -50,4 +50,19 @@ public class HdfsClient {
         // 关闭资源
         fileSystem.close();
     }
+
+    // 上传操作
+    @Test
+    public void testPut() throws IOException {
+
+        // delSrc 上传之后是否删除原始数据
+        // overwrite 是否允许覆盖
+        // src 源数据路径
+        // dest 目的地路径
+        fileSystem.copyFromLocalFile(
+                false,
+                false,
+                new Path("C:\\Users\\Administrator\\IdeaProjects\\HDFS\\src\\main\\resources\\log4j.properties"),
+                new Path("/xiyou/huaguoshan"));
+    }
 }
