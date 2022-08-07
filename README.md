@@ -6,7 +6,7 @@
 
 ## 镜像内置一键启动脚本
 ```shell
-myhadoop start/stop
+myhadoop.sh start/stop
 ```
 
 ## 注意
